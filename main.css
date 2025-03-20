@@ -1,0 +1,224 @@
+html {
+  margin: 0;
+}
+
+body {
+  margin:50px 0 0 0;
+  font-family: "Crimson Text", serif;
+  overflow-x:hidden;
+}
+
+
+h1 {
+  font-family: "Cutive Mono", monospace;
+  font-size:6vh;
+  line-height:1.1;
+  font-weight: normal;
+  text-align:center;
+  margin-bottom:5px;
+}
+
+
+.hp {
+  margin: 0;
+}
+
+.hphead {
+  background-color: #2B471E;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.buttons a {
+  background-color: #2B471E;
+  padding: .5rem .75rem;
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+}
+
+h2 {
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 0;
+  text-align: center;
+  letter-spacing:1px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 15px 0;
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: normal;
+  font-family: 'Crimson';
+  text-align: center;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+hr {
+  border: 2px solid black;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.module {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* Alternate background colors */
+.module:nth-of-type(odd) {
+  background-color: white; /* Original background */
+  color: black; /* Original text color */
+}
+
+/* Full-bleed background for even modules, but keep content centered */
+.module:nth-of-type(even) {
+  background-color: #0f1c00; /* Full-bleed blue background */
+  color:white;
+  margin: 0;
+  padding: 50px 0;
+  width: 100vw; /* Full-bleed width */
+}
+
+.module:nth-of-type(even) .bodycopy {
+  margin: 0 auto;
+  padding: 50px; /* Padding for the content */
+}
+
+/* Ensure text inside the blue sections is white */
+.module:nth-of-type(even) h1, 
+.module:nth-of-type(even) h2, 
+.module:nth-of-type(even) p {
+  color: white;
+}
+
+.intro {
+  background-image: url("assets/photo2.jpg");
+  background-size: 250px; 
+  background-repeat: repeat;
+  color:white;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::selection {
+  color: white;
+  background: #7BD80A;
+}
+
+.bodycopy {
+/*  max-width: 60%;*/
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 0 auto; /* Center bodycopy content */
+}
+
+.center {
+  text-align: center;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .1px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h5 {
+  font-family: 'Karla', sans-serif;
+  font-size:3vh;
+  letter-spacing:1px;
+  margin-bottom:25px;
+}
+
+.pullquote {
+  font-size: 4vh;
+  text-align: center;
+  max-width: 500px;
+}
+
+footer {
+  height: 20px;
+  background-color: #033896;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  max-width:60%;
+}
+
+.module.bigimg {
+  width: 100%;
+}
+
+.module.medimg {
+  width: 70%;
+}
+
+.module.smallimg {
+  width: 40%;
+}
+
+img {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    max-width:90%;
+  }
+}
+
+/* Keyframes for smooth scroll animation */
+@keyframes fadeIn {
+  0% {
+    background-color:#2B471E;
+  }
+  100% {
+    background-color:#0f1c00;
+  }
+}
+
+/* Class for smoother animation */
+.animate{
+  animation: fadeIn 15s ease-out alternate infinite;
+}
