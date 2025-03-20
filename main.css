@@ -18,6 +18,10 @@ h1 {
   margin-bottom:5px;
 }
 
+.intro h1 {
+  background-color: #2B471E;
+}
+
 
 .hp {
   margin: 0;
@@ -30,7 +34,8 @@ h1 {
 }
 
 .buttons a {
-  background-color: #2B471E;
+  background-color: #ABCE9E;
+  color: #2B471E;
   padding: .5rem .75rem;
   font-family: 'Karla', sans-serif;
   font-size: 15px;
@@ -98,7 +103,7 @@ hr {
 
 /* Full-bleed background for even modules, but keep content centered */
 .module:nth-of-type(even) {
-  background-color: #0f1c00; /* Full-bleed blue background */
+  background-color: #324623; /* Full-bleed blue background */
   color:white;
   margin: 0;
   padding: 50px 0;
